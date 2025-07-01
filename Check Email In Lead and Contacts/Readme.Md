@@ -17,3 +17,16 @@ This Apex class handles potential duplicate records between **Contacts** and **L
 
 ```apex
 public static String manageContact(String email, String fname, String lname)
+
+
+## 💡 Sample Usage
+
+You can test this class from the Execute Anonymous Window in Salesforce
+
+```apex
+String result = Email_In_Lead_Contact.manageContact(
+    'testuser@example.com', 
+    'Test', 
+    'User'
+);
+System.debug(result);
